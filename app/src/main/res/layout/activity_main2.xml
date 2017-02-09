@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.raphael.animation.Main2Activity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_0"
+        android:id="@+id/ivRyu"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:ignore="MissingConstraints"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:onClick="darHadouken"
+        tools:ignore="HardcodedText,MissingConstraints"
+        android:layout_marginTop="38dp"
+        android:id="@+id/button4"
+        android:layout_below="@+id/ivRyu"
+        android:layout_alignEnd="@+id/ivRyu" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop"
+        android:onClick="stop"
+        tools:ignore="HardcodedText,MissingConstraints"
+        android:layout_alignBaseline="@+id/button4"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_alignStart="@+id/ivRyu" />
+
+</RelativeLayout>
